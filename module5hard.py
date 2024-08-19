@@ -1,3 +1,4 @@
+
 class User:
 	def __init__(self, nickname, password, age):
 		self.nickname = nickname
@@ -38,13 +39,12 @@ class UrTube:
 		user = User(nickname, password, age)
 		self.users.append(user)
 		self.current_user = user
+def log_out(self):
+	self.current_user = None
+	print('Cброс текущего пользователя')
 
-
-user1 = User('g', 456, 45)
-user2 = User('g', 456, 45)
-ur = UrTube([user1, user2], [], [])
-
-ur.register('g', 556, 56)
-print(ur.users)
-# for i in ur.users:
-# 	print(i.nickname)
+def add(self, *video_object):
+	for video in self.videos:
+		if video.title == title:
+			self.videos.append(video_object)
+def get_videos(self, title):
