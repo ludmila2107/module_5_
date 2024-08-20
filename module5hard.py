@@ -42,9 +42,15 @@ class UrTube:
 def log_out(self):
 	self.current_user = None
 	print('Cброс текущего пользователя')
-
 def add(self, *video_object):
-	for video in self.videos:
+	for video in videos:
 		if video.title == title:
 			self.videos.append(video_object)
 def get_videos(self, title):
+	videos_list = [video['name'] for video in self.videos if title in video['name']]
+	return videos_list
+
+def watch_video(self, title):
+	for video in videos:
+		if video.title != title:
+			break
